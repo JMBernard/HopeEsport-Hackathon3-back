@@ -21,7 +21,7 @@ CREATE TABLE `players` (
     `prizelist` varchar(64)  NULL ,
     `personnality` varchar(64) NULL ,
     `sentence` varchar(192)  NOT NULL ,
-    `description` varchar(192)  NOT NULL ,
+    `description` varchar(500)  NOT NULL ,
     `games` varchar(64) NULL ,
     `discord` varchar(64)  NULL ,
     `instagram` varchar(64)  NULL ,
@@ -49,9 +49,26 @@ CREATE TABLE `members` (
     )
 );
 
+
+///////////////////////////////////////////////////////////
+
+
+Dans la table admin:
+
 {
     "name": "admin",
     "password": "admin123"
+}
+
+Dans Players :
+
+{
+    "pseudonym": "Logoss",
+    "firstname" : "Hugo",
+    "player_img" : "img.jpeg",
+    "sentence" : "Le destin n’est jamais tout tracé, c’est à toi d’écrire ton histoire.",
+    "description" : "20 ans, Ecole de Commerce à Nice.Je suis motivé à devenir toujours meilleur en compétition, mais je n’oublie pas mes études ! Objectif à court et moyen terme : faire une grosse performance respectable en Master Tour, et finir mes études sans contretemps.",
+    "discord": "[Hope] Logoss#8803"
 }
 
 {
@@ -59,12 +76,74 @@ CREATE TABLE `members` (
     "firstname" : "Julien",
     "player_img" : "img.jpeg",
     "sentence" : "On apprend peu par la victoire, mais beaucoup par la défaite.",
-    "description" : "22 ans, fan de sport, Tennis depuis 16 ans, sport études.Etudiant à l’université en anthropologie.Adepte des jeux tryhard. Depuis février 2021 désormais focus sur HS."
+    "description" : "22 ans, fan de sport, Tennis depuis 16 ans, sport études.Etudiant à l’université en anthropologie.Adepte des jeux tryhard. Depuis février 2021 désormais focus sur HS.",
+    "discord": "[Hope] Roulian#9446"
+}
+
+{
+    "pseudonym": "Bongo",
+    "firstname" : "Thomas",
+    "player_img" : "img.jpeg",
+    "sentence" : "On peut perdre en prenant des risques mais on ne gagne jamais sans en prendre.",
+    "description" : "24 ans, Tennis depuis 15 ans, grand fan de sport, d’animés, mangas.",
+    "discord": "[Hope] Bongo#7298"
+}
+
+
+Dans members :
+
+{
+    "firstname" : "Antoine",
+    "logotype" : "logoS.jpg",
+    "age" : 25,
+    "position" : "Gérant",
+    "discord" : "[Hope] SKZ#0233",
+    "twitter" : "https://twitter.com/SKZ_HS"
+}
+
+{
+    "firstname" : "Jules",
+    "logotype" : "logoZ.jpg",
+    "age" : 20,
+    "position" : "Co-Gérant",
+    "discord" : "[Hope] ZaryHs#6387",
+    "twitter" : "https://twitter.com/zaryhs"
 }
 
 {
     "firstname" : "Antoine",
+    "logotype" : "logoO.jpg",
+    "age" : 23,
+    "position" : "Trésorier",
+    "discord" : "[Hope] ophtalmo#3863",
+    "twitter" : "https://twitter.com/ophtalmohs"
+}
+
+{
+    "firstname" : "Magi",
+    "logotype" : "logoM.jpg",
+    "position" : "Responsable Événementiel",
+    "discord" : "Magi#9264",
+    "twitter" : "https://twitter.com/Magikh42"
+}
+
+{
+    "firstname" : "Martin",
+    "age" : 30,
+    "logotype" : "logoCK.jpg",
+    "position" : "Responsable Graphiste",
+    "discord" : "Coolkid#4154",
+    "twitter" : "https://twitter.com/7coolkid7",
+    "twitch" : "https://www.twitch.tv/7coolkid7"
+}
+
+{
+    "firstname" : "Rémi",
+    "age" : 31,
     "logotype" : "logoK.jpg",
-    "age" : 25,
-    "position" : "Trésorier"
+    "position" : "Responsable Marketing",
+    "discord" : "Koulouff#9420",
+    "twitter" : "https://twitter.com/Hkoulouff",
+    "twitch" : "https://www.twitch.tv/koulouff"
+
 }
