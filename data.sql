@@ -63,5 +63,8 @@ CREATE TABLE `members` (
 }
 
 {
-
+    "firstname" : "Antoine",
+    "logotype" : "logoK.jpg",
+    "age" : 25,
+    "position" : "Trésorier"
 }

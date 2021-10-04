@@ -21,24 +21,24 @@ router.get('/:id', (req, res) => {
         res.status(500).send('Error retrieving player from database');
       } else {
         if (results.length) res.json(results[0]);
-        else res.status(404).send('Payer not found');
+        else res.status(404).send('Player not found');
       }
     }
   );
 });
 
 router.post('/', (req, res) => {
-  const { pseudonym, firstname, player_img, sentence, description, games } = req.body;
+  const { pseudonym, firstname, lastname, player_img, prizelist, personnality, sentence, description, games, discord, instagram, twitter, twitch } = req.body;
   connection.query(
-    'INSERT INTO players (pseudonym, firstname, player_img, sentence, description) VALUES (?, ?, ?, ?, ?)',
-    [pseudonym, firstname, player_img, sentence, description],
+    'INSERT INTO players (pseudonym, firstname, lastname, player_img, prizelist, personnality, sentence, description, games, discord, instagram, twitter, twitch) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+    [pseudonym, firstname, lastname, player_img, prizelist, personnality, sentence, description, games, discord, instagram, twitter, twitch],
     (err, result) => {
       if (err) {
         console.error(err);
         res.status(500).send('Error saving the player');
       } else {
         const id = result.insertId;
-        const createdPlayer = { id, pseudonym, firstname, player_img, sentence, description };
+        const createdPlayer = { id, pseudonym, firstname, lastname, player_img, prizelist, personnality, sentence, description, games, discord, instagram, twitter, twitch };
         res.status(201).json(createdPlayer);
       }
     }

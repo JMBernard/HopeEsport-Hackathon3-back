@@ -28,17 +28,17 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  const { pseudonym, firstname, logotype, age, position, discord, twitter, twitch } = req.body;
+  const { pseudonym, firstname, logotype, age, position, discord, instagram, twitter, twitch } = req.body;
   connection.query(
-    'INSERT INTO members (pseudonym, firstname, logotype, age, position, discord, twitter, twitch) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-    [pseudonym, firstname, logotype, age, position, discord, twitter, twitch],
+    'INSERT INTO members (pseudonym, firstname, logotype, age, position, discord, instagram, twitter, twitch) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+    [pseudonym, firstname, logotype, age, position, discord, instagram, twitter, twitch],
     (err, result) => {
       if (err) {
         console.error(err);
         res.status(500).send('Error saving the members');
       } else {
         const id = result.insertId;
-        const createdMembers = { id, pseudonym, firstname, logotype, age, position, discord, twitter, twitch };
+        const createdMembers = { id, pseudonym, firstname, logotype, age, position, discord, instagram, twitter, twitch };
         res.status(201).json(createdMembers);
       }
     }
