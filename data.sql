@@ -36,7 +36,7 @@ DROP TABLE IF EXISTS `members`;
 CREATE TABLE `members` (
     `id` int NOT NULL AUTO_INCREMENT,
     `pseudonym` varchar(64)  NULL ,
-    `name` varchar(64)  NOT NULL ,
+    `firstname` varchar(64)  NOT NULL ,
     `logotype` varchar(64)  NOT NULL ,
     `age` int  NULL ,
     `position` varchar(64)  NULL ,
@@ -48,3 +48,20 @@ CREATE TABLE `members` (
         `id`
     )
 );
+
+{
+    "name": "admin",
+    "password": "admin123"
+}
+
+{
+    "pseudonym": "Roulian",
+    "firstname" : "Julien",
+    "player_img" : "img.jpeg",
+    "sentence" : "On apprend peu par la victoire, mais beaucoup par la défaite.",
+    "description" : "22 ans, fan de sport, Tennis depuis 16 ans, sport études.Etudiant à l’université en anthropologie.Adepte des jeux tryhard. Depuis février 2021 désormais focus sur HS."
+}
+
+{
+
+}
