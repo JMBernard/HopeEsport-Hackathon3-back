@@ -28,17 +28,17 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  const { pseudonym, firstname, lastname, player_img, prizelist, personnality, sentence, description, games, discord, instagram, twitter, twitch } = req.body;
+  const { pseudonym, firstname, lastname, player_img, prizelist, player_logotype, personnality, sentence, age, description, games, discord, instagram, twitter, twitch } = req.body;
   connection.query(
-    'INSERT INTO players (pseudonym, firstname, lastname, player_img, prizelist, personnality, sentence, description, games, discord, instagram, twitter, twitch) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-    [pseudonym, firstname, lastname, player_img, prizelist, personnality, sentence, description, games, discord, instagram, twitter, twitch],
+    'INSERT INTO players (pseudonym, firstname, lastname, player_img, player_logotype, prizelist, personnality, sentence, age, description, games, discord, instagram, twitter, twitch) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+    [pseudonym, firstname, lastname, player_img, player_logotype, prizelist, personnality, sentence, age, description, games, discord, instagram, twitter, twitch],
     (err, result) => {
       if (err) {
         console.error(err);
         res.status(500).send('Error saving the player');
       } else {
         const id = result.insertId;
-        const createdPlayer = { id, pseudonym, firstname, lastname, player_img, prizelist, personnality, sentence, description, games, discord, instagram, twitter, twitch };
+        const createdPlayer = { id, pseudonym, firstname, lastname, player_img, player_logotype, prizelist, personnality, sentence, age, description, games, discord, instagram, twitter, twitch };
         res.status(201).json(createdPlayer);
       }
     }

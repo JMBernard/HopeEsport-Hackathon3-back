@@ -18,9 +18,11 @@ CREATE TABLE `players` (
     `firstname` varchar(64)  NOT NULL ,
     `lastname` varchar(64)  NULL ,
     `player_img` varchar(64)  NOT NULL ,
+    `player_logotype` varchar(64) NULL,
     `prizelist` varchar(64)  NULL ,
     `personnality` varchar(64) NULL ,
     `sentence` varchar(192)  NOT NULL ,
+    `age` int NULL,
     `description` varchar(500)  NOT NULL ,
     `games` varchar(64) NULL ,
     `discord` varchar(64)  NULL ,
@@ -65,27 +67,36 @@ Dans Players :
 {
     "pseudonym": "Logoss",
     "firstname" : "Hugo",
-    "player_img" : "img.jpeg",
+    "player_img" : "/assets/LogossProfil1.png",
+    "player_logotype": "/assets/LogossLogo.png",
     "sentence" : "Le destin n’est jamais tout tracé, c’est à toi d’écrire ton histoire.",
-    "description" : "20 ans, Ecole de Commerce à Nice.Je suis motivé à devenir toujours meilleur en compétition, mais je n’oublie pas mes études ! Objectif à court et moyen terme : faire une grosse performance respectable en Master Tour, et finir mes études sans contretemps.",
+    "age": 20,
+    "description" : "Ecole de Commerce à Nice.Je suis motivé à devenir toujours meilleur en compétition, mais je n’oublie pas mes études ! Objectif à court et moyen terme : faire une grosse performance respectable en Master Tour, et finir mes études sans contretemps.",
+    "games": "Rocket League",
     "discord": "[Hope] Logoss#8803"
 }
 
 {
     "pseudonym": "Roulian",
     "firstname" : "Julien",
-    "player_img" : "img.jpeg",
+    "player_img" : "/assets/RoulianProfil1.png",
+    "player_logotype": "/assets/RoulianLogo.png",
     "sentence" : "On apprend peu par la victoire, mais beaucoup par la défaite.",
-    "description" : "22 ans, fan de sport, Tennis depuis 16 ans, sport études.Etudiant à l’université en anthropologie.Adepte des jeux tryhard. Depuis février 2021 désormais focus sur HS.",
+    "age": 22,
+    "description" : "Fan de sport, Tennis depuis 16 ans, sport études.Etudiant à l’université en anthropologie.Adepte des jeux tryhard. Depuis février 2021 désormais focus sur HS.",
+    "games": "Fifa, Call Of Duty",
     "discord": "[Hope] Roulian#9446"
 }
 
 {
     "pseudonym": "Bongo",
     "firstname" : "Thomas",
-    "player_img" : "img.jpeg",
+    "player_img" : "/assets/BongoProfil1.png",
+    "player_logotype": "/assets/BongoLogo.png",
     "sentence" : "On peut perdre en prenant des risques mais on ne gagne jamais sans en prendre.",
-    "description" : "24 ans, Tennis depuis 15 ans, grand fan de sport, d’animés, mangas.",
+    "age": 24,
+    "description" : "Tennis depuis 15 ans, grand fan de sport, d’animés, mangas.",
+    "games": "Call Of Duty, Overwatch, Diablo",
     "discord": "[Hope] Bongo#7298"
 }
 
@@ -145,5 +156,4 @@ Dans members :
     "discord" : "Koulouff#9420",
     "twitter" : "https://twitter.com/Hkoulouff",
     "twitch" : "https://www.twitch.tv/koulouff"
-
 }
