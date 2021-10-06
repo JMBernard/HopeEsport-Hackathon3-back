@@ -52,6 +52,11 @@ CREATE TABLE `members` (
 );
 
 
+
+
+
+
+
 ///////////////////////////////////////////////////////////
 
 
@@ -104,8 +109,8 @@ Dans Players :
 Dans members :
 
 {
-    "firstname" : "Antoine",
-    "logotype" : "logoS.jpg",
+    "firstname" : "Florian",
+    "logotype" : "/assets/ZKSLogo.png",
     "age" : 25,
     "position" : "Gérant",
     "discord" : "[Hope] SKZ#0233",
@@ -114,7 +119,7 @@ Dans members :
 
 {
     "firstname" : "Jules",
-    "logotype" : "logoZ.jpg",
+    "logotype" : "/assets/ZaryLogo.png",
     "age" : 20,
     "position" : "Co-Gérant",
     "discord" : "[Hope] ZaryHs#6387",
@@ -123,7 +128,7 @@ Dans members :
 
 {
     "firstname" : "Antoine",
-    "logotype" : "logoO.jpg",
+    "logotype" : "/assets/OphtalmoLogo.png",
     "age" : 23,
     "position" : "Trésorier",
     "discord" : "[Hope] ophtalmo#3863",
@@ -132,7 +137,7 @@ Dans members :
 
 {
     "firstname" : "Magi",
-    "logotype" : "logoM.jpg",
+    "logotype" : "/assets/MagiLogo.png",
     "position" : "Responsable Événementiel",
     "discord" : "Magi#9264",
     "twitter" : "https://twitter.com/Magikh42"
@@ -141,7 +146,7 @@ Dans members :
 {
     "firstname" : "Martin",
     "age" : 30,
-    "logotype" : "logoCK.jpg",
+    "logotype" : "/assets/CoolkidLogo.png",
     "position" : "Responsable Graphiste",
     "discord" : "Coolkid#4154",
     "twitter" : "https://twitter.com/7coolkid7",
@@ -151,7 +156,7 @@ Dans members :
 {
     "firstname" : "Rémi",
     "age" : 31,
-    "logotype" : "logoK.jpg",
+    "logotype" : "/assets/KoulouffLogo.png",
     "position" : "Responsable Marketing",
     "discord" : "Koulouff#9420",
     "twitter" : "https://twitter.com/Hkoulouff",
